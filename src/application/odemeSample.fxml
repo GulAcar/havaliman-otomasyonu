@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="446.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.odemeSampleController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="82.0" layoutY="60.0" prefHeight="500.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="17.0" layoutY="6.0" prefHeight="17.0" prefWidth="229.0" text="Yolcu Bilgileri" />
+                  <TextField fx:id="emailLabel" layoutX="14.0" layoutY="55.0" promptText="               @gmail.com" />
+                  <TextField fx:id="cepLabel" layoutX="10.0" layoutY="110.0" promptText="05" />
+                  <Label layoutX="14.0" layoutY="38.0" text="E-Mail" />
+                  <Label layoutX="13.0" layoutY="93.0" text="Cep Telefonu" />
+                  <TextField fx:id="AdLabel" layoutX="14.0" layoutY="177.0" prefHeight="25.0" prefWidth="86.0" promptText="AD" />
+                  <TextField fx:id="soyadLabel" layoutX="150.0" layoutY="177.0" prefHeight="25.0" prefWidth="86.0" promptText="SOYAD" />
+                  <TextField fx:id="tcLabel" layoutX="14.0" layoutY="224.0" prefHeight="25.0" prefWidth="86.0" />
+                  <TextField fx:id="dogumTarLabel" layoutX="150.0" layoutY="224.0" prefHeight="25.0" prefWidth="86.0" promptText="GG/AA/YY" />
+                  <Label layoutX="17.0" layoutY="160.0" text="Ad" />
+                  <Label layoutX="149.0" layoutY="160.0" prefHeight="0.0" prefWidth="28.0" text="Soyad" />
+                  <Label layoutX="17.0" layoutY="207.0" text="TC Kimlik No" />
+                  <Label layoutX="149.0" layoutY="207.0" text="Dogum Tarihi" />
+                  <RadioButton fx:id="KadinRb" layoutX="134.0" layoutY="256.0" mnemonicParsing="false" text="Kadın" />
+                  <RadioButton fx:id="erkekRb" layoutX="134.0" layoutY="284.0" mnemonicParsing="false" text="Erkek" />
+                  <TextField fx:id="HesLabel" layoutX="10.0" layoutY="348.0" />
+                  <Label layoutX="15.0" layoutY="331.0" prefHeight="17.0" prefWidth="73.0" text="HES Kodu" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="6.0" prefHeight="17.0" prefWidth="170.0" text="Ödeme Bilgileri" />
+                  <Label layoutX="16.0" layoutY="73.0" prefHeight="17.0" prefWidth="105.0" text="Kart Numarası" />
+                  <Label layoutX="16.0" layoutY="131.0" prefHeight="39.0" prefWidth="80.0" text="Son Kullanma Tarihi" wrapText="true" />
+                  <Label layoutX="128.0" layoutY="153.0" prefHeight="17.0" prefWidth="50.0" text="CVv2" />
+                  <TextField fx:id="kartnoLabel" layoutX="13.0" layoutY="95.0" />
+                  <TextField fx:id="sonkullanmaLabel" layoutX="14.0" layoutY="170.0" prefHeight="25.0" prefWidth="73.0" promptText="AA/YY" />
+                  <TextField fx:id="cvvLabel" layoutX="128.0" layoutY="170.0" prefHeight="25.0" prefWidth="80.0" />
+                  <Button fx:id="btn_ode" layoutX="138.0" layoutY="299.0" mnemonicParsing="false" onAction="#btn_ode_click" prefHeight="33.0" prefWidth="80.0" text="ÖDE" />
+                  <Label layoutX="28.0" layoutY="234.0" text="Tutar" />
+                  <Label fx:id="fiyatLabl" layoutX="28.0" layoutY="265.0" prefHeight="17.0" prefWidth="58.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

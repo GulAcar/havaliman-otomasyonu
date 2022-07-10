@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.havaalaniSampleController">
+   <children>
+      <Button fx:id="biletal" layoutX="100.0" layoutY="423.0" mnemonicParsing="false" onAction="#biletalClick" prefHeight="25.0" prefWidth="288.0" text="Bilet Al" />
+      <CheckBox fx:id="tekyon" layoutX="36.0" layoutY="302.0" mnemonicParsing="false" onAction="#tekyon_click" text="Tek Yön" />
+      <CheckBox fx:id="aktarmasiz" layoutX="139.0" layoutY="302.0" mnemonicParsing="false" onAction="#aktarmasiz_click" text="Aktarmasız" />
+      <ChoiceBox fx:id="nereden" layoutX="49.0" layoutY="60.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="nereye" layoutX="260.0" layoutY="60.0" prefWidth="150.0" />
+      <DatePicker fx:id="gidis_trh" layoutX="52.0" layoutY="147.0" />
+      <DatePicker fx:id="donus_trh" layoutX="265.0" layoutY="147.0" />
+      <ChoiceBox fx:id="yetiskin" layoutX="36.0" layoutY="238.0" prefHeight="25.0" prefWidth="64.0" />
+      <ChoiceBox fx:id="ogrenci" layoutX="356.0" layoutY="238.0" prefHeight="25.0" prefWidth="64.0" />
+      <ChoiceBox fx:id="bebek" layoutX="244.0" layoutY="238.0" prefHeight="25.0" prefWidth="64.0" />
+      <ChoiceBox fx:id="cocuk" layoutX="139.0" layoutY="238.0" prefHeight="25.0" prefWidth="64.0" />
+      <Label layoutX="49.0" layoutY="40.0" prefHeight="17.0" prefWidth="150.0" text="Nereden" />
+      <Label layoutX="260.0" layoutY="40.0" prefHeight="17.0" prefWidth="150.0" text="Nereye" />
+      <Label layoutX="52.0" layoutY="128.0" prefHeight="17.0" prefWidth="174.0" text="Gidiş" />
+      <Label layoutX="265.0" layoutY="128.0" prefHeight="17.0" prefWidth="174.0" text="Dönüş" />
+      <Label layoutX="36.0" layoutY="221.0" prefHeight="17.0" prefWidth="64.0" text="Yetişkin" />
+      <Label layoutX="139.0" layoutY="221.0" prefHeight="17.0" prefWidth="64.0" text="Çocuk" />
+      <Label layoutX="244.0" layoutY="221.0" prefHeight="17.0" prefWidth="64.0" text="Bebek" />
+      <Label layoutX="356.0" layoutY="221.0" prefHeight="17.0" prefWidth="64.0" text="Öğrenci" />
+   </children>
+</AnchorPane>
